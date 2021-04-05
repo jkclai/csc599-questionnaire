@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+    <div class="form-wrapper">
+        <h1 class="form-header">Understanding The Needs of a Developer's Day-To-Day Job.</h1>
+        <h2 class="form-header">Welcome!</h2>
+
+        <div class="form-content">
+            <p>
+                We are a group of researchers from the University of Victoria interested in uncovering the needs of software developers and designing visualizations that will improve the workflow of software development.
+            </p>
+
+            <p>
+                This questionnaire is organized into four sections, each containing multiple questions.  The questionnaire will ask you to rate each question on two Likert scales, one about the frequency of this question and the other about the importance of this question.
+            </p>
+
+            <p>
+                Although the questionnaire looks quite long, the questions are very fast to answer.  It should take no more than 20 minutes to complete.
+            </p>
+
+            <p>
+                Thank you for participating in our survey.  Your feedback is important to us.
+            </p>
+
+            <p>
+                If you have any questions about the survey, please feel free to contact Jimmy at kclai@uvic.ca
+            </p>
+
+            <br>
+
+            <button id="submit-button">Next</button>
+
+            <p>
+                If the button does not work, please disable any tracker blocker extensions or use incognito mode (recommended).
+            </p>
+        </div>
+    </div>
+
+    <script src="./assets/scripts/constants.js"></script>
+
+    <script>
+        if(localStorage.getItem("user_id") == null) {
+            localStorage.setItem("user_id", btoa(Math.random()));
+        }
+    </script>
+    
+    <script>
+        const button = document.getElementById("submit-button");
+
+        button.addEventListener("click", e => {
+            document.getElementById("submit-button").disabled = true;
+
+            fetch("https://script.google.com/macros/s/" + SCRIPT_ID + "/exec?callback=?", {method: "POST", mode: "no-cors"})
+                .then(response => {
+                    console.log("Success!", response);
+                    window.location.href = "./page0.html";
+                })
+                .catch(error => {
+                    console.error("Error!", error.message);
+                    document.getElementById("submit-button").disabled = false;
+                });
+        });
+    </script>
+</body>
+</html>

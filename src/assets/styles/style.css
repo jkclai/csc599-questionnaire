@@ -1,0 +1,174 @@
+html,body {
+    padding: 10px;
+}
+
+/*-----*/
+
+.mandatory-asterisk {
+    font: 30px Arial, san-serif;
+    color: red;
+}
+
+/*-----*/
+
+.form-wrapper {
+    font: 15px Arial, san-serif;
+}
+
+.form-header {
+    padding-left: 5%;
+}
+
+.form-content {
+    padding-left: 5%;
+    width: 70%;
+}
+
+.form-options {
+    margin: 30px 0;
+    padding: 0 4.25%;
+    text-align: right;
+}
+  
+.form-options button {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 3px;
+}
+
+/*-----*/
+
+.likert-block {
+    table-layout: fixed;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/*-----*/
+
+.likert-table-column-statement {
+    width: 20%;
+    overflow: hidden;
+}
+
+.likert-table-column-question {
+    width: 40%;
+    overflow: hidden;
+    border-left: 2px solid #efefef;
+}
+
+.likert-tablerow:nth-child(even) {
+    background-color: lightgray;
+}
+
+.likert-tableheader {
+    padding-bottom: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+}
+
+.likert-tableheader div {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.likert-tableheader div label {
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+}
+
+.likert-tabledata {
+    padding-top:20px;
+    padding-bottom:20px; 
+    border-top: 2px solid #efefef;
+}
+
+/*-----*/
+
+.likert-data-statement {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0 10px 4.25%;
+}
+
+.likert-data-statement textarea {
+    width: 90%;
+    height: 3.5em;
+    overflow: hidden;
+    resize: none;
+}
+
+.likert-data-question {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.likert-data-question:before {
+    content: '';
+    display: block;
+    position: relative;
+    top: 11px;
+    left: 10%;
+    background-color: #efefef;
+    height: 4px;
+    width: 80%;
+}
+
+.likert-data-question div {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+    vertical-align: top;
+}
+  
+.likert-data-question div input[type=radio] {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-----*/
+
+.demogr-block {
+    padding-top:10px;
+    padding-bottom:20px;
+    padding-left: 5%;
+}
+
+.demogr-data-statement {
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.demogr-data-question {
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+.demogr-data-question input[type=text] {
+    width: 300px;
+    height: 1em;
+    overflow: hidden;
+    resize: none;
+}
+
+.demogr-data-question textarea {
+    width: 500px;
+    height: 4em;
+    overflow: hidden;
+    resize: none;
+}
+
+/*-----*/

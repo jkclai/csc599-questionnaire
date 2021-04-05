@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+    <div class="form-wrapper">
+        <h1 class="form-header">Code (Conside a line of code or a file of code)</h1>
+        <h2 class="form-header">Page 1 of 4</h2>
+        <form name="submit-to-google-sheet">
+            <table class="likert-block">
+                <colgroup>
+                    <col class="likert-table-column-statement" span="1">
+                    <col class="likert-table-column-question" span="1">
+                    <col class="likert-table-column-question" span="1">
+                </colgroup>
+                <tr class="likert-tablerow">
+                    <th class="likert-tableheader">
+                    </th>
+                    <th class="likert-tableheader">
+                        <label>How often do I ask this question?</label>
+                        <div>
+                            <label>never</label>
+                            <label>rarely</br>(~1/month)</label>
+                            <label>sometimes</br>(~1/week)</label>
+                            <label>often</br>(~1/day)</label>
+                            <label>frequently</br>(>1/day)</label>
+                        </div>
+                    </th>
+                    <th class="likert-tableheader">
+                        <label>How important is it to answer this question?</label>
+                        <div>
+                            <label>not important</label>
+                            <label>low importance</label>
+                            <label>neutral</label>
+                            <label>important</label>
+                            <label>very important</label>
+                        </div>
+                    </th>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">Who is the author of a specific code?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q2_f' value='1' required></div><div><input type="radio" name='p1_q2_f' value='2' required></div><div><input type="radio" name='p1_q2_f' value='3' required></div><div><input type="radio" name='p1_q2_f' value='4' required></div><div><input type="radio" name='p1_q2_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q2_i' value='1' required></div><div><input type="radio" name='p1_q2_i' value='2' required></div><div><input type="radio" name='p1_q2_i' value='3' required></div><div><input type="radio" name='p1_q2_i' value='4' required></div><div><input type="radio" name='p1_q2_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">Who is the author of the majority of a specific code?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q3_f' value='1' required></div><div><input type="radio" name='p1_q3_f' value='2' required></div><div><input type="radio" name='p1_q3_f' value='3' required></div><div><input type="radio" name='p1_q3_f' value='4' required></div><div><input type="radio" name='p1_q3_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q3_i' value='1' required></div><div><input type="radio" name='p1_q3_i' value='2' required></div><div><input type="radio" name='p1_q3_i' value='3' required></div><div><input type="radio" name='p1_q3_i' value='4' required></div><div><input type="radio" name='p1_q3_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">Who is the author of the previous changes made to a specific code?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q4_f' value='1' required></div><div><input type="radio" name='p1_q4_f' value='2' required></div><div><input type="radio" name='p1_q4_f' value='3' required></div><div><input type="radio" name='p1_q4_f' value='4' required></div><div><input type="radio" name='p1_q4_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q4_i' value='1' required></div><div><input type="radio" name='p1_q4_i' value='2' required></div><div><input type="radio" name='p1_q4_i' value='3' required></div><div><input type="radio" name='p1_q4_i' value='4' required></div><div><input type="radio" name='p1_q4_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">Who is the author of the most changes to a specific code?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q5_f' value='1' required></div><div><input type="radio" name='p1_q5_f' value='2' required></div><div><input type="radio" name='p1_q5_f' value='3' required></div><div><input type="radio" name='p1_q5_f' value='4' required></div><div><input type="radio" name='p1_q5_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q5_i' value='1' required></div><div><input type="radio" name='p1_q5_i' value='2' required></div><div><input type="radio" name='p1_q5_i' value='3' required></div><div><input type="radio" name='p1_q5_i' value='4' required></div><div><input type="radio" name='p1_q5_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">Who is the expert of a specific code?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q6_f' value='1' required></div><div><input type="radio" name='p1_q6_f' value='2' required></div><div><input type="radio" name='p1_q6_f' value='3' required></div><div><input type="radio" name='p1_q6_f' value='4' required></div><div><input type="radio" name='p1_q6_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q6_i' value='1' required></div><div><input type="radio" name='p1_q6_i' value='2' required></div><div><input type="radio" name='p1_q6_i' value='3' required></div><div><input type="radio" name='p1_q6_i' value='4' required></div><div><input type="radio" name='p1_q6_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">Given a specific developer what code did they author?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q7_f' value='1' required></div><div><input type="radio" name='p1_q7_f' value='2' required></div><div><input type="radio" name='p1_q7_f' value='3' required></div><div><input type="radio" name='p1_q7_f' value='4' required></div><div><input type="radio" name='p1_q7_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q7_i' value='1' required></div><div><input type="radio" name='p1_q7_i' value='2' required></div><div><input type="radio" name='p1_q7_i' value='3' required></div><div><input type="radio" name='p1_q7_i' value='4' required></div><div><input type="radio" name='p1_q7_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">Is a specific change made to the code a meaningful change?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q9_f' value='1' required></div><div><input type="radio" name='p1_q9_f' value='2' required></div><div><input type="radio" name='p1_q9_f' value='3' required></div><div><input type="radio" name='p1_q9_f' value='4' required></div><div><input type="radio" name='p1_q9_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q9_i' value='1' required></div><div><input type="radio" name='p1_q9_i' value='2' required></div><div><input type="radio" name='p1_q9_i' value='3' required></div><div><input type="radio" name='p1_q9_i' value='4' required></div><div><input type="radio" name='p1_q9_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">What is the size of a specific code?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q10_f' value='1' required></div><div><input type="radio" name='p1_q10_f' value='2' required></div><div><input type="radio" name='p1_q10_f' value='3' required></div><div><input type="radio" name='p1_q10_f' value='4' required></div><div><input type="radio" name='p1_q10_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q10_i' value='1' required></div><div><input type="radio" name='p1_q10_i' value='2' required></div><div><input type="radio" name='p1_q10_i' value='3' required></div><div><input type="radio" name='p1_q10_i' value='4' required></div><div><input type="radio" name='p1_q10_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">What is the complexity of a specific code?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q11_f' value='1' required></div><div><input type="radio" name='p1_q11_f' value='2' required></div><div><input type="radio" name='p1_q11_f' value='3' required></div><div><input type="radio" name='p1_q11_f' value='4' required></div><div><input type="radio" name='p1_q11_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q11_i' value='1' required></div><div><input type="radio" name='p1_q11_i' value='2' required></div><div><input type="radio" name='p1_q11_i' value='3' required></div><div><input type="radio" name='p1_q11_i' value='4' required></div><div><input type="radio" name='p1_q11_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">What is the risk factor of a specific code?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q12_f' value='1' required></div><div><input type="radio" name='p1_q12_f' value='2' required></div><div><input type="radio" name='p1_q12_f' value='3' required></div><div><input type="radio" name='p1_q12_f' value='4' required></div><div><input type="radio" name='p1_q12_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q12_i' value='1' required></div><div><input type="radio" name='p1_q12_i' value='2' required></div><div><input type="radio" name='p1_q12_i' value='3' required></div><div><input type="radio" name='p1_q12_i' value='4' required></div><div><input type="radio" name='p1_q12_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">What is the risk of change of a specific code?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q13_f' value='1' required></div><div><input type="radio" name='p1_q13_f' value='2' required></div><div><input type="radio" name='p1_q13_f' value='3' required></div><div><input type="radio" name='p1_q13_f' value='4' required></div><div><input type="radio" name='p1_q13_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q13_i' value='1' required></div><div><input type="radio" name='p1_q13_i' value='2' required></div><div><input type="radio" name='p1_q13_i' value='3' required></div><div><input type="radio" name='p1_q13_i' value='4' required></div><div><input type="radio" name='p1_q13_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">When is a specific code created?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q15_f' value='1' required></div><div><input type="radio" name='p1_q15_f' value='2' required></div><div><input type="radio" name='p1_q15_f' value='3' required></div><div><input type="radio" name='p1_q15_f' value='4' required></div><div><input type="radio" name='p1_q15_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q15_i' value='1' required></div><div><input type="radio" name='p1_q15_i' value='2' required></div><div><input type="radio" name='p1_q15_i' value='3' required></div><div><input type="radio" name='p1_q15_i' value='4' required></div><div><input type="radio" name='p1_q15_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">Is a specific code recently modified?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q16_f' value='1' required></div><div><input type="radio" name='p1_q16_f' value='2' required></div><div><input type="radio" name='p1_q16_f' value='3' required></div><div><input type="radio" name='p1_q16_f' value='4' required></div><div><input type="radio" name='p1_q16_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q16_i' value='1' required></div><div><input type="radio" name='p1_q16_i' value='2' required></div><div><input type="radio" name='p1_q16_i' value='3' required></div><div><input type="radio" name='p1_q16_i' value='4' required></div><div><input type="radio" name='p1_q16_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">What code is frequently modified?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q17_f' value='1' required></div><div><input type="radio" name='p1_q17_f' value='2' required></div><div><input type="radio" name='p1_q17_f' value='3' required></div><div><input type="radio" name='p1_q17_f' value='4' required></div><div><input type="radio" name='p1_q17_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q17_i' value='1' required></div><div><input type="radio" name='p1_q17_i' value='2' required></div><div><input type="radio" name='p1_q17_i' value='3' required></div><div><input type="radio" name='p1_q17_i' value='4' required></div><div><input type="radio" name='p1_q17_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">How frequently does a specfic code gets modified?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q18_f' value='1' required></div><div><input type="radio" name='p1_q18_f' value='2' required></div><div><input type="radio" name='p1_q18_f' value='3' required></div><div><input type="radio" name='p1_q18_f' value='4' required></div><div><input type="radio" name='p1_q18_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q18_i' value='1' required></div><div><input type="radio" name='p1_q18_i' value='2' required></div><div><input type="radio" name='p1_q18_i' value='3' required></div><div><input type="radio" name='p1_q18_i' value='4' required></div><div><input type="radio" name='p1_q18_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">What Jira tickets modified a specific code?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q19_f' value='1' required></div><div><input type="radio" name='p1_q19_f' value='2' required></div><div><input type="radio" name='p1_q19_f' value='3' required></div><div><input type="radio" name='p1_q19_f' value='4' required></div><div><input type="radio" name='p1_q19_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q19_i' value='1' required></div><div><input type="radio" name='p1_q19_i' value='2' required></div><div><input type="radio" name='p1_q19_i' value='3' required></div><div><input type="radio" name='p1_q19_i' value='4' required></div><div><input type="radio" name='p1_q19_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">What pull requests modified a specific code?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q20_f' value='1' required></div><div><input type="radio" name='p1_q20_f' value='2' required></div><div><input type="radio" name='p1_q20_f' value='3' required></div><div><input type="radio" name='p1_q20_f' value='4' required></div><div><input type="radio" name='p1_q20_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q20_i' value='1' required></div><div><input type="radio" name='p1_q20_i' value='2' required></div><div><input type="radio" name='p1_q20_i' value='3' required></div><div><input type="radio" name='p1_q20_i' value='4' required></div><div><input type="radio" name='p1_q20_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">What are the previous changes made to a specific code?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q21_f' value='1' required></div><div><input type="radio" name='p1_q21_f' value='2' required></div><div><input type="radio" name='p1_q21_f' value='3' required></div><div><input type="radio" name='p1_q21_f' value='4' required></div><div><input type="radio" name='p1_q21_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q21_i' value='1' required></div><div><input type="radio" name='p1_q21_i' value='2' required></div><div><input type="radio" name='p1_q21_i' value='3' required></div><div><input type="radio" name='p1_q21_i' value='4' required></div><div><input type="radio" name='p1_q21_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">What Jira ticket prompted change to a specific code?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q22_f' value='1' required></div><div><input type="radio" name='p1_q22_f' value='2' required></div><div><input type="radio" name='p1_q22_f' value='3' required></div><div><input type="radio" name='p1_q22_f' value='4' required></div><div><input type="radio" name='p1_q22_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q22_i' value='1' required></div><div><input type="radio" name='p1_q22_i' value='2' required></div><div><input type="radio" name='p1_q22_i' value='3' required></div><div><input type="radio" name='p1_q22_i' value='4' required></div><div><input type="radio" name='p1_q22_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">What pull request prompted change to a specific code?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q23_f' value='1' required></div><div><input type="radio" name='p1_q23_f' value='2' required></div><div><input type="radio" name='p1_q23_f' value='3' required></div><div><input type="radio" name='p1_q23_f' value='4' required></div><div><input type="radio" name='p1_q23_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q23_i' value='1' required></div><div><input type="radio" name='p1_q23_i' value='2' required></div><div><input type="radio" name='p1_q23_i' value='3' required></div><div><input type="radio" name='p1_q23_i' value='4' required></div><div><input type="radio" name='p1_q23_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">What Jira ticket is associated with a specific code?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q24_f' value='1' required></div><div><input type="radio" name='p1_q24_f' value='2' required></div><div><input type="radio" name='p1_q24_f' value='3' required></div><div><input type="radio" name='p1_q24_f' value='4' required></div><div><input type="radio" name='p1_q24_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q24_i' value='1' required></div><div><input type="radio" name='p1_q24_i' value='2' required></div><div><input type="radio" name='p1_q24_i' value='3' required></div><div><input type="radio" name='p1_q24_i' value='4' required></div><div><input type="radio" name='p1_q24_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">What pull request is associated with a specific code?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q25_f' value='1' required></div><div><input type="radio" name='p1_q25_f' value='2' required></div><div><input type="radio" name='p1_q25_f' value='3' required></div><div><input type="radio" name='p1_q25_f' value='4' required></div><div><input type="radio" name='p1_q25_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q25_i' value='1' required></div><div><input type="radio" name='p1_q25_i' value='2' required></div><div><input type="radio" name='p1_q25_i' value='3' required></div><div><input type="radio" name='p1_q25_i' value='4' required></div><div><input type="radio" name='p1_q25_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">What commit is associated with a specifc code?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q26_f' value='1' required></div><div><input type="radio" name='p1_q26_f' value='2' required></div><div><input type="radio" name='p1_q26_f' value='3' required></div><div><input type="radio" name='p1_q26_f' value='4' required></div><div><input type="radio" name='p1_q26_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q26_i' value='1' required></div><div><input type="radio" name='p1_q26_i' value='2' required></div><div><input type="radio" name='p1_q26_i' value='3' required></div><div><input type="radio" name='p1_q26_i' value='4' required></div><div><input type="radio" name='p1_q26_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">What is the context behind a specific change made to the code?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q27_f' value='1' required></div><div><input type="radio" name='p1_q27_f' value='2' required></div><div><input type="radio" name='p1_q27_f' value='3' required></div><div><input type="radio" name='p1_q27_f' value='4' required></div><div><input type="radio" name='p1_q27_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q27_i' value='1' required></div><div><input type="radio" name='p1_q27_i' value='2' required></div><div><input type="radio" name='p1_q27_i' value='3' required></div><div><input type="radio" name='p1_q27_i' value='4' required></div><div><input type="radio" name='p1_q27_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">What is the intention behind a specific change made to the code?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q28_f' value='1' required></div><div><input type="radio" name='p1_q28_f' value='2' required></div><div><input type="radio" name='p1_q28_f' value='3' required></div><div><input type="radio" name='p1_q28_f' value='4' required></div><div><input type="radio" name='p1_q28_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q28_i' value='1' required></div><div><input type="radio" name='p1_q28_i' value='2' required></div><div><input type="radio" name='p1_q28_i' value='3' required></div><div><input type="radio" name='p1_q28_i' value='4' required></div><div><input type="radio" name='p1_q28_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">What is the overall flow of codes?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q29_f' value='1' required></div><div><input type="radio" name='p1_q29_f' value='2' required></div><div><input type="radio" name='p1_q29_f' value='3' required></div><div><input type="radio" name='p1_q29_f' value='4' required></div><div><input type="radio" name='p1_q29_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q29_i' value='1' required></div><div><input type="radio" name='p1_q29_i' value='2' required></div><div><input type="radio" name='p1_q29_i' value='3' required></div><div><input type="radio" name='p1_q29_i' value='4' required></div><div><input type="radio" name='p1_q29_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">Are these codes related?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q30_f' value='1' required></div><div><input type="radio" name='p1_q30_f' value='2' required></div><div><input type="radio" name='p1_q30_f' value='3' required></div><div><input type="radio" name='p1_q30_f' value='4' required></div><div><input type="radio" name='p1_q30_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q30_i' value='1' required></div><div><input type="radio" name='p1_q30_i' value='2' required></div><div><input type="radio" name='p1_q30_i' value='3' required></div><div><input type="radio" name='p1_q30_i' value='4' required></div><div><input type="radio" name='p1_q30_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">What are the relationships between the codes?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q31_f' value='1' required></div><div><input type="radio" name='p1_q31_f' value='2' required></div><div><input type="radio" name='p1_q31_f' value='3' required></div><div><input type="radio" name='p1_q31_f' value='4' required></div><div><input type="radio" name='p1_q31_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q31_i' value='1' required></div><div><input type="radio" name='p1_q31_i' value='2' required></div><div><input type="radio" name='p1_q31_i' value='3' required></div><div><input type="radio" name='p1_q31_i' value='4' required></div><div><input type="radio" name='p1_q31_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">What codes were other developers working on at a specific time?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q32_f' value='1' required></div><div><input type="radio" name='p1_q32_f' value='2' required></div><div><input type="radio" name='p1_q32_f' value='3' required></div><div><input type="radio" name='p1_q32_f' value='4' required></div><div><input type="radio" name='p1_q32_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q32_i' value='1' required></div><div><input type="radio" name='p1_q32_i' value='2' required></div><div><input type="radio" name='p1_q32_i' value='3' required></div><div><input type="radio" name='p1_q32_i' value='4' required></div><div><input type="radio" name='p1_q32_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">Is a specific code correctly created?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q35_f' value='1' required></div><div><input type="radio" name='p1_q35_f' value='2' required></div><div><input type="radio" name='p1_q35_f' value='3' required></div><div><input type="radio" name='p1_q35_f' value='4' required></div><div><input type="radio" name='p1_q35_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q35_i' value='1' required></div><div><input type="radio" name='p1_q35_i' value='2' required></div><div><input type="radio" name='p1_q35_i' value='3' required></div><div><input type="radio" name='p1_q35_i' value='4' required></div><div><input type="radio" name='p1_q35_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <label class="likert-data-statement">Is the right person doing the work on a specific code?</label>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q37_f' value='1' required></div><div><input type="radio" name='p1_q37_f' value='2' required></div><div><input type="radio" name='p1_q37_f' value='3' required></div><div><input type="radio" name='p1_q37_f' value='4' required></div><div><input type="radio" name='p1_q37_f' value='5' required></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_q37_i' value='1' required></div><div><input type="radio" name='p1_q37_i' value='2' required></div><div><input type="radio" name='p1_q37_i' value='3' required></div><div><input type="radio" name='p1_q37_i' value='4' required></div><div><input type="radio" name='p1_q37_i' value='5' required></div>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="likert-tablerow">
+                    <td class="likert-tabledata">
+                        <div class="likert-data-statement">
+                            <label>Other:</label>
+                            <textarea id="p1_c1_s" name="p1_c1_s" onclick="addCustomBlock(this.id)" placeholder="What are some questions that we missed?"></textarea>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_c1_f' value='1'></div><div><input type="radio" name='p1_c1_f' value='2'></div><div><input type="radio" name='p1_c1_f' value='3'></div><div><input type="radio" name='p1_c1_f' value='4'></div><div><input type="radio" name='p1_c1_f' value='5'></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='p1_c1_i' value='1'></div><div><input type="radio" name='p1_c1_i' value='2'></div><div><input type="radio" name='p1_c1_i' value='3'></div><div><input type="radio" name='p1_c1_i' value='4'></div><div><input type="radio" name='p1_c1_i' value='5'></div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="form-options">
+                <input type="hidden" id="user_id" name="user_id" required>
+                <button type="submit" id="submit-button">Next</button>
+            </div>
+        </form>
+    </div>
+    
+    <script src="./assets/scripts/constants.js"></script>
+    
+    <script>
+        if(localStorage.getItem("user_id") == null) {
+            localStorage.setItem("user_id", btoa(Math.random()));
+        }
+        document.getElementById("user_id").value = localStorage.getItem("user_id");
+    </script>
+    
+    <script>
+        function addCustomBlock(id) {
+            var idArray = id.split("_");
+            var p = parseInt(idArray[0].substring(1));
+            var c = parseInt(idArray[1].substring(1));
+
+            var idNew_s = "p" + p.toString() + "_c" + (c+1).toString() + "_s";
+            var idNew_f = "p" + p.toString() + "_c" + (c+1).toString() + "_f";
+            var idNew_i = "p" + p.toString() + "_c" + (c+1).toString() + "_i";
+
+            if(document.getElementById(idNew_s) == null && c < 10) {
+                var block = document.getElementsByClassName("likert-block")[0];
+                
+                var row = document.createElement("tr");
+                row.className = "likert-tablerow";
+
+                row.innerHTML = `
+                    <td class="likert-tabledata">
+                        <div class="likert-data-statement">
+                            <label>Other:</label>
+                            <textarea id="` + idNew_s + `" name="` + idNew_s + `" onclick="addCustomBlock(this.id)" placeholder="What are some questions that we missed?"></textarea>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='` + idNew_f + `' value='1'></div><div><input type="radio" name='` + idNew_f + `' value='2'></div><div><input type="radio" name='` + idNew_f + `' value='3'></div><div><input type="radio" name='` + idNew_f + `' value='4'></div><div><input type="radio" name='` + idNew_f + `' value='5'></div>
+                        </div>
+                    </td>
+                    <td class="likert-tabledata">
+                        <div class="likert-data-question">
+                            <div><input type="radio" name='` + idNew_i + `' value='1'></div><div><input type="radio" name='` + idNew_i + `' value='2'></div><div><input type="radio" name='` + idNew_i + `' value='3'></div><div><input type="radio" name='` + idNew_i + `' value='4'></div><div><input type="radio" name='` + idNew_i + `' value='5'></div>
+                        </div>
+                    </td>
+                `; 
+
+                block.appendChild(row);
+            }
+        }
+    </script>
+    
+    <script>
+        const form = document.forms["submit-to-google-sheet"];
+
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+
+            document.getElementById("submit-button").disabled = true;
+
+            if(form.checkValidity()) {
+                fetch("https://script.google.com/macros/s/" + SCRIPT_ID + "/exec?callback=?", {method: "POST", mode:"no-cors", body: new FormData(form)})
+                    .then(response => {
+                        console.log("Success!", response);
+                        window.location.href = "./page2.html";
+                    })
+                    .catch(error => {
+                        console.error("Error!", error.message);
+                        document.getElementById("submit-button").disabled = false;
+                    });
+            }
+        })
+    </script>
+</body>
+</html>

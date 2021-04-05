@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+<body>
+    <div class="form-wrapper">
+        <h1 class="form-header">Demographics</h1>
+        <form name="submit-to-google-sheet">
+            <div class="demogr-block">
+                <label class="demogr-data-statement">What is the highest degree or level of education you have completed?</label><label class="mandatory-asterisk">*</label>
+                <div class="demogr-data-question">
+                    <div><input type="radio" name="demogr_edu" value="1" required>High School</div>
+                    <div><input type="radio" name="demogr_edu" value="2" required>Bachelor's Degree</div>
+                    <div><input type="radio" name="demogr_edu" value="3" required>Master's Degree</div>
+                    <div><input type="radio" name="demogr_edu" value="4" required>PhD Degree</div>
+                </div>
+            </div>
+            <div class="demogr-block">
+                <label class="demogr-data-statement">How much experience do you have in software development?</label><label class="mandatory-asterisk">*</label>
+                <div class="demogr-data-question">
+                    <div><input type="radio" name="demogr_exp" value="1" required>Less than 3 years</div>
+                    <div><input type="radio" name="demogr_exp" value="2" required>3 to 4 years</div>
+                    <div><input type="radio" name="demogr_exp" value="3" required>5 to 7 year</div>
+                    <div><input type="radio" name="demogr_exp" value="4" required>8 to 14 years</div>
+                    <div><input type="radio" name="demogr_exp" value="5" required>More than 15 years</div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="demogr-block">
+                <label class="demogr-data-statement">What is your current role?</label><label class="mandatory-asterisk">*</label>
+                <div class="demogr-data-question">
+                    <input type="text" id="demogr_role" name="demogr_role" required></textarea>
+                </div>
+            </div>
+            <div class="demogr-block">
+                <label class="demogr-data-statement">How much experience do you have in your current role?</label><label class="mandatory-asterisk">*</label>
+                <div class="demogr-data-question">
+                    <div><input type="radio" name="demogr_role_exp" value="1" required>Less than 3 years</div>
+                    <div><input type="radio" name="demogr_role_exp" value="2" required>3 to 4 years</div>
+                    <div><input type="radio" name="demogr_role_exp" value="3" required>5 to 7 year</div>
+                    <div><input type="radio" name="demogr_role_exp" value="4" required>8 to 14 years</div>
+                    <div><input type="radio" name="demogr_role_exp" value="5" required>More than 15 years</div>
+                </div>
+            </div>
+            <div class="demogr-block">
+                <label class="demogr-data-statement">How would you describe your current role? (OPTIONAL)</label>
+                <div class="demogr-data-question">
+                    <textarea id="demogr_role_desc" name="demogr_role_desc"></textarea>
+                </div>
+            </div>
+
+            <div class="form-options">
+                <input type="hidden" id="user_id" name="user_id" required>
+                <button type="submit" id="submit-button">Next</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./assets/scripts/constants.js"></script>
+
+    <script>
+        if(localStorage.getItem("user_id") == null) {
+            localStorage.setItem("user_id", btoa(Math.random()));
+        }
+        document.getElementById("user_id").value = localStorage.getItem("user_id");
+    </script>
+    
+    <script>
+        const form = document.forms["submit-to-google-sheet"];
+
+        form.addEventListener("submit", e => {
+            e.preventDefault();
+
+            document.getElementById("submit-button").disabled = true;
+
+            if(form.checkValidity()) {
+                fetch("https://script.google.com/macros/s/" + SCRIPT_ID + "/exec?callback=?", {method: "POST", mode: "no-cors", body: new FormData(form)})
+                    .then(response => {
+                        console.log("Success!", response);
+                        window.location.href = "./page1.html";
+                    })
+                    .catch(error => {
+                        console.error("Error!", error.message);
+                        document.getElementById("submit-button").disabled = false;
+                    });
+            }
+        })
+    </script>
+</body>
+</html>
